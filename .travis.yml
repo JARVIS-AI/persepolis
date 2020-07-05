@@ -1,15 +1,38 @@
 language: python
-dist: trusty
+dist: bionic
 sudo: required
 python:
-  - "3.4"
+  - "3.6"
 virtualenv:
   system_site_packages: true
+
+addons:
+  apt:
+    update: true
+    packages:
+      python3
+      aria2
+      sound-theme-freedesktop
+      libnotify-bin
+      libqt5svg5
+      python3-pyqt5.qtsvg
+      python3-setuptools
+      python3-pip
+      python3-pyqt5
+      pulseaudio
+      python3-psutil
+      ffmpeg
+
 before_install:
-  - sudo apt-get -qq update
-  - sudo apt-get install -y aria2 pulseaudio-utils libnotify-bin python3-pyqt5
-install:
-  - pip3 install requests
+  - sudo pip3 install youtube-dl requests setproctitle
+
+install: true
+
 script:
- - bash install
- - man persepolis
+ - sudo python3 setup.py install
+ - persepolis --version
+
+after_success:
+ - pip3 install transifex-client==0.12.5
+ - sudo echo $'[https://www.transifex.com]\napi_hostname = https://api.transifex.com\nhostname = https://www.transifex.com\nusername = '"$TRANSIFEX_USER"$'\npassword = '"$TRANSIFEX_PASSWORD"$'\n' > ~/.transifexrc
+ - tx push -s

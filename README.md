@@ -1,177 +1,76 @@
-#Persepolis Download Manager [![Build Status](https://travis-ci.org/persepolisdm/persepolis.svg?branch=master)](https://travis-ci.org/persepolisdm/persepolis)
- 
-+ version : 2.3.2
-+ Persepolis Download Manager is a GUI for aria2.
-+ Persepolis written in PYQT5.
+<p align="center">
+  <img src="https://persepolisdm.github.io/img/screen/persepolisـreadme.png" width="128px"/>
+</p>
+<h1 align="center">Persepolis Download Manager</h1>
 
+[![Latest stable release](https://img.shields.io/github/release/persepolisdm/persepolis.svg?maxAge=3600)](https://github.com/persepolisdm/persepolis/releases) [![Total downloads](https://img.shields.io/github/downloads/persepolisdm/persepolis/total.svg)](https://github.com/persepolisdm/persepolis) [![GitHub license](https://img.shields.io/github/license/persepolisdm/persepolis.svg)](https://github.com/persepolisdm/persepolis/blob/master/LICENSE) [![Build Status](https://travis-ci.org/persepolisdm/persepolis.svg?branch=master)](https://travis-ci.org/persepolisdm/persepolis) [![GitHub last commit](https://img.shields.io/github/last-commit/persepolisdm/persepolis.svg)](https://github.com/persepolisdm/persepolis/commits/master) [![GitHub contributors](https://img.shields.io/github/contributors/persepolisdm/persepolis.svg)](https://github.com/persepolisdm/persepolis/graphs/contributors) [![GitHub commit activity the past week, 4 weeks, year](https://img.shields.io/github/commit-activity/y/persepolisdm/persepolis.svg)](https://github.com/persepolisdm/persepolis/commits/master) [![AUR](https://img.shields.io/aur/version/persepolis.svg)](https://aur.archlinux.org/packages/persepolis) [![Twitter Follow](https://img.shields.io/twitter/follow/persepolisdm.svg?style=social&label=Follow)](https://twitter.com/persepolisdm)
 
-![ScreenShot](http://s1.picofile.com/file/8264685926/persepolis.jpg)
+> **Content**  
+> - [About](https://github.com/persepolisdm/persepolis#about)  
+> - [FAQ](https://github.com/persepolisdm/persepolis#faq)  
+> - [Screenshots](https://github.com/persepolisdm/persepolis#screenshots)  
+> - [Credits](https://github.com/persepolisdm/persepolis#credits)  
 
+### **About**
+Persepolis is a download manager & a GUI for [Aria2](https://github.com/aria2/aria2). It's written in Python. Persepolis is a sample of free and open source software. It's developed for GNU/Linux distributions, BSDs, MacOS, and Microsoft Windows.  
 
+### **Features**
+- Multi-segment downloading
+- Scheduling downloads
+- Download queuing
+- Finding and downloading video from Youtube, Vimeo, DailyMotion, etc.  
+- and many more!
 
-# Installing on GNU/Linux
-## Ubuntu based (Ubuntu16.04 , Kubuntu , Xubuntu , Linux Mint , ... ):
+### **FAQ**
+> **Where does the name come from?**
 
-	$ sudo add-apt-repository ppa:persepolis/ppa
-	$ sudo apt-get update
-	$ sudo apt-get install persepolis
+> > [From Wikipedia:](https://en.wikipedia.org/wiki/Persepolis) Persepolis (Greek: Περσέπολις Persépolis; "the Persian city") or Parsa (Old Persian: 𐎱𐎠𐎼𐎿 Pārsa; "Persia"), 
+also known as Takht-e-Jamshid (Persian: تخت جمشيد‎‎ Taxt e Jamšid; "Throne of Jamshid"),
+was the ceremonial capital of the Achaemenid Empire (ca. 550–330 BC).
+Persepolis is situated 60 km northeast of the city of Shiraz in Fars Province, Iran. The earliest remains of Persepolis date back to 515 BC. 
+It exemplifies the Achaemenid style of architecture. UNESCO declared the ruins of Persepolis a World Heritage Site in 1979.
 
+> **How can I install Persepolis?**
 
-## Intalling on ArchLinux and Arch bases
-### Installing latest release (recommended)
+> > Read [our wiki](https://github.com/persepolisdm/persepolis/wiki) or check [Persepolis website](https://persepolisdm.github.io) for more information.
 
-    $ yaourt -S persepolis
 
-### Installing with latest changes from github
+### **Screenshots**
 
-	$ yaourt -S persepolis-git
-	
-## Installing on Fedora
+|GNU/Linux|Mac OSX|Windows|  
+|:---:|:---:|:---:|  
+|![](https://persepolisdm.github.io/img/screen/persepolis.png)|![](https://persepolisdm.github.io/img/screen/mac.png)|![](https://persepolisdm.github.io/img/screen/windows.png)|
 
-	$ sudo dnf copr enable amirsamimi/persepolis
-	$ sudo dnf install persepolis
+### Credits
 
-## Installing on openSUSE
+**Alireza Amirsamimi:** Persepolis lead developer and manager  
+[GitHub](https://github.com/alireza-amirsamimi) | [E-mail](mailto:alireza.amirsamimi@ubuntu.ir)
 
-please visit this link : [software.opensuse.org](https://software.opensuse.org/download.html?project=home%3Ahayyan71&package=persepolis)
+**Mohammadreza Abdollahzadeh:** Arch Linux and BSD support  
+[GitHub](https://github.com/morealaz) | [E-mail](mailto:morealaz@gmail.com)
 
+**Mostafa Asadi:** Ubuntu, Debian and Windows support  
+[GitHub](https://github.com/mostafaasadi) | [E-mail](mailto:mostafaasadi73@gmail.com)
 
+**MohammadAmin Vahedinia:** Mac OSX support  
+[GitHub](https://github.com/Mr0Null) | [E-mail](mailto:persepolisdm@vahedinia.me)
 
+**Sadegh Alirezaie:** Persepolis website support  
+[GitHub](https://github.com/Alirezaies) | [E-mail](mailto:alirezaie@sadegh.io)
 
-## Other distributions (Installing from github)
-### Before running install file make sure that all dependencies are installed on your system!
-You must have `aria2` , `pulseaudio-utils` , `libnotify-bin` , `python 3` , `pyqt5` , `qt5-svg` , `python3-requests` installed.
+**Jafar Akhondali:** Browsers add-ons support  
+[GitHub](https://github.com/JafarAkhondali) | [E-mail](mailto:jafar.akhondali@yahoo.com)
 
-#### Installing Dependencies for Archlinux
+**H Rostami:** UI translation, Fedora & OpenSuse support  
+[GitHub](https://github.com/hayyan71) | [E-mail](mailto:hayyan71@yahoo.com)
 
-    $ sudo pacman -S aria2 vorbis-tools libnotify python-pyqt5 qt5-svg python-requests
+**Ehsan Titish:** Mac OSX support   
+[GitHub](https://github.com/Maders) | [E-mail](mailto:me@maders.ir)
 
-#### Installing Dependencies for Debian and Debian base distros (ubuntu, ... )
+**Charles K Barcza:** blackPanther OS support  
+[GitHub](https://github.com/blackPantherOS/persepolis) | [E-mail](mailto:info@blackpantheros.eu)
 
-    $ sudo apt-get install aria2 pulseaudio-utils libnotify-bin python3-pyqt5 libqt5svg5 python3-requests
+[Persepolis website (En)](https://persepolisdm.github.io/) | [Persepolis website (Fa)](https://persepolisdm.github.io/fa) | [Twitter](https://twitter.com/persepolisdm) | [Telegram Channel](https://telegram.me/persepolisdm)
 
-#### Installing Dependencies for Fedora
-
-    $ sudo dnf install aria2 pulseaudio-utils libnotify python3-qt5 qt5-qtsvg python3-requests
-
-
-
-### Installing Persepolis Download Manager itself
-
-    $ git clone "https://github.com/persepolisdm/persepolis.git" 
-    $ cd persepolis
-
-to install
-
-    $ bash install 
-
-to uninstall,
-
-    $ bash uninstall
-
-
-## Installing on Mac OS X
-Download Persepolis.Download.Manager.app.zip package from [here](https://github.com/persepolisdm/persepolis/releases/tag/2.3) . 
-Unzip it! Move .app file to /Application folder.
-or if you preffer build the package yourself , Please read [packaging instruction](https://github.com/persepolisdm/mac-package-build) 
-
-
-#Chromium(Chrome) integration
-Install our [chrome extensions](https://chrome.google.com/webstore/detail/persepolis-download-manag/legimlagjjoghkoedakdjhocbeomojao?hl=en)
-Open persepolis . from Help menu select browser integration and then select your browser . restart your browser!
-Done!
-
-right click on your download link and select "download with persepolis"
-
-
-##Configuring PersepolisDM to use with FlashGot
-open firefox
-open menu
-click add-ons
-![ScreenShot](http://s9.picofile.com/file/8269073968/addons.jpg)
-click on get add-ons
-in the search box search the flashgot
-then click on install and install it
-restart the firefox (close and open it again)
-
-then after opening firefox go to Extensions and find flashgot
-
-![ScreenShot](http://s9.picofile.com/file/8269074242/prefrences.jpg)
-
-then click on preferences and click add
-write Persepolis Download Manager and select this file for executble path (in linux)
-
-	$ /usr/bin/persepolis
-
-and (in Mac)
-
-    $ /Applications/Persepolis Download Manager.app/Contents/MacOS/Persepolis Download Manager 
-
-then in the white field copy/paste the following codes
-
-	$  [--link URL][--name FNAME][--referer REFERER][--headers HEADERS][--agent UA][--cookie COOKIE]
-
-![ScreenShot](http://s1.picofile.com/file/8264685818/flashgot1.png)
-
-then at the end click on the advance tab and uncheck automatic download manager detection
-
-![ScreenShot](http://s9.picofile.com/file/8269073134/flashgot4.jpg)
-
-and on media tab select Persepolis Download Manager
-
-![ScreenShot](http://s9.picofile.com/file/8269073384/flashgot3.jpg)
-
-uncheck this too!
-
-![ScreenShot](http://s8.picofile.com/file/8269073684/flashgot2.jpg)
-
-then Click OK and enjoy!!
-
-you can use flashgot for download from youtube , ...
-
-![ScreenShot](http://s9.picofile.com/file/8269074434/mediafire_download.jpg)
-
-![ScreenShot](http://s8.picofile.com/file/8269074500/youtube_download.jpg)
-
-
-
-## Contact us
-Persepolis code developer : **Alireza Amirsamimi**
-https://github.com/alireza-amirsamimi
-alireza.amirsamimi@ubuntu.ir
-
-Arch repository maintainer : **Mohammadreza Abdollahzadeh**
-https://github.com/morealaz
-morealaz@gmail.com
-
-Launchpad repository maintainer : **Mostafa Asadi**
-https://github.com/mostafaasadi
-mostafaasadi73@gmail.com
-
-MacOS X users support : **MohammadAmin Vahedinia**
-https://github.com/Mr0Null
-mohammadamin@beeit.ir
-
-
-Persepolis website developer : **Sadegh Alirezaie**
-https://github.com/Alirezaies
-alirezaie.sadegh@gmail.com
-
-Chrome/Chromium Integration : **Jafar Akhondali**
-https://github.com/JafarAkhondali
-jafar.akhondali@yahoo.com
-
-Persepolis website :
-https://persepolisdm.github.io/
-
-Persepolis persian website:
-http://amirsamimi.ir/persepolis2
-
-Persepolis Twitter
-https://twitter.com/persepolisdm
-
-PersepolisDM Telegram Channel:
-https://telegram.me/persepolisdm
-
-## Read more about PERSEPOLIS
-https://en.wikipedia.org/wiki/Persepolis
+---
+_Is there any mistake in README.md? Report it in [issue tracker](https://github.com/persepolisdm/persepolis/issues) or correct it by yourself._
